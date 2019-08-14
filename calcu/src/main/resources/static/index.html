@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Calculation</title>
+</head>
+<body>
+<div class="container">
+    <form>
+        <h4 class="mt-5 mb-4">EMI Calculator</h4>
+        <div class="form-group">
+            <label for="loan">Loan amount ($)</label>
+            <input type="number" class="form-control inputLoan" id="loan" placeholder="Enter loan amount">
+        </div>
+        <div class="form-group">
+            <label for="rate">Annual interest rate (%)</label>
+            <input type="number" class="form-control inputRate" id="rate" placeholder="Enter interest rate">
+        </div>
+        <div class="form-group">
+            <label for="tenure">Loan tenure (months)</label>
+            <input type="number" class="form-control inputTenure" id="tenure" placeholder="Enter loan tenure">
+        </div>
+        <button type="button" class="btn btn-primary calBtn">Calculate EMI</button>
+    </form>
+
+    <h4 class="mt-4 result">Equated Monthly Installment Result($): <strong class="calResult"></strong></h4>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
